@@ -1,0 +1,175 @@
+$darkModeBGColor: #111;
+$secondary-color: rgb(156, 156, 156);
+$darkmodeBGRed: rgb(125, 0, 0);
+$darkModeBorderColor: #333;
+
+@mixin darkModeShadow {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+}
+
+.app.dark {
+  background-color: $darkModeBGColor;
+  color: $secondary-color;
+
+  .widget {
+    background-color: rgba(56, 139, 253, 0.15);
+    border: 1px solid rgba(56, 139, 253, 0.4);
+    @include darkModeShadow();
+  }
+
+  .featured,
+  .chart,
+  .listContainer {
+    // border-color:  rgba(56,139,253,0.4);
+    @include darkModeShadow();
+
+    .datatable {
+      .datatableTitle {
+        .link {
+          color: green;
+        }
+      }
+
+      .datagrid {
+        .viewButton {
+          color: rgb(42, 83, 145);
+          border: 1px dotted rgb(22, 90, 173);
+        }
+
+        .deleteButton {
+          color: rgba(255, 99, 71, 0.6);
+          border: 1px dotted rgba(220, 20, 60, 0.6);
+        }
+      }
+
+      .cellWithStatus {
+        &.true {
+          color: green;
+          background-color: rgba(0, 128, 0, 0.05);
+        }
+
+        &.false {
+          color: rgba(255, 99, 71, 0.594);
+          background-color: rgba(255, 0, 0, 0.05);
+        }
+      }
+    }
+
+    .table {
+      @include darkModeShadow();
+    }
+  }
+
+  .singleContainer {
+    .top {
+      .left {
+        @include darkModeShadow();
+      }
+    }
+
+    .bottom {
+      @include darkModeShadow();
+    }
+  }
+
+  .newContainer {
+
+    .top,
+    .bottom {
+      @include darkModeShadow();
+    }
+  }
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219)
+  }
+
+  .table {
+    background-color: $darkModeBGColor;
+
+    .tableCell {
+      color: gray;
+    }
+  }
+
+  .navbar {
+    color: #999;
+    background-color: #2a2b36;
+    border-color: $darkModeBorderColor;
+
+    .item {
+
+      &:hover {
+        background-color: $darkModeBorderColor;
+      }
+
+      .counter {
+        background-color: $darkmodeBGRed;
+        color: $secondary-color;
+      }
+    }
+
+    .search {
+      border-color: gray;
+    }
+
+    input {
+      color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: $darkModeBGColor;
+    border-color: $darkModeBorderColor;
+
+    .top {
+      background-color: #2a2b36;
+
+      .logo {
+        color: #999;
+      }
+    }
+
+    hr {
+      border-color: $darkModeBorderColor;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: $darkModeBorderColor;
+        }
+      }
+    }
+
+    .icon {
+      color: #999;
+    }
+  }
+
+  .datatable {
+    .datagrid {
+      color: gray;
+      border: none;
+
+      .viewButton,
+      .deleteButton,
+      .cellWithStatus {
+        color: gray;
+        border: none;
+      }
+
+      span,
+      svg,
+      p {
+        color: #999;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+    color: #999;
+  }
+}
