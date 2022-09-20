@@ -3,6 +3,7 @@ import { DataGrid } from '@mui/x-data-grid'
 import { userColumns, userRows } from '../../datatablesource'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
+import DeleteButton from '../button/DeleteButton'
 
 function Datatable() {
 
@@ -20,7 +21,7 @@ function Datatable() {
             <Link to='/users/test' style={{ textDecoration: "none" }} >
               <div className="viewButton">View</div>
             </Link>
-            <div className="deleteButton" onClick={() => handleDelete(params.row.id)}>Delete</div>
+            <DeleteButton onClick={() => handleDelete(params.row.id)} />
           </div>
         )
       }
