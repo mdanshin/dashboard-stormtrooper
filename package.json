@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mdanshin.danshin.ms/",
-  "name": "dms-dashboard",
+  "homepage": "https://mdanshin.danshin.ms/dashboard-stormtrooper",
+  "name": "dashboard-stormtrooper",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
