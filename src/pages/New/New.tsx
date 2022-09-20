@@ -3,15 +3,17 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import './new.scss'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
 import { useState } from 'react';
+import { IUser } from "../../models/IUser";
+import { IProduct } from '../../models/IProduct';
 
 interface props {
-  inputs: any,
+  inputs: IUser[] | IProduct[],
   title: string
 }
 
 function New({ inputs, title }: props) {
 
-  const [file, setFile] = useState<any>("")
+  const [file, setFile] = useState<File>()
 
   return (
     <div className='new'>
@@ -36,7 +38,7 @@ function New({ inputs, title }: props) {
                   }
                 }} style={{ display: "none" }} />
               </div>
-              {inputs.map((input: any) => {
+              {inputs.map((input) => {
                 return (
                   <div className="formInput" key={input.id}>
                     <label htmlFor={input.label}>{input.label}</label>

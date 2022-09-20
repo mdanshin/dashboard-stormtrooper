@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
 import Main from "./pages/Main/Main"
 import Password from "./pages/Password/Password"
 import Single from "./pages/Single/Single"

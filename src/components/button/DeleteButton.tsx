@@ -1,4 +1,4 @@
-﻿import './deleteButton.scss'
+import './deleteButton.scss'
 
 interface props {
   onClick: any
