@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.bee80549.css",
-    "main.js": "/react-gh-pages/static/js/main.785c2d0b.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.bee80549.css.map": "/react-gh-pages/static/css/main.bee80549.css.map",
-    "main.785c2d0b.js.map": "/react-gh-pages/static/js/main.785c2d0b.js.map"
+    "main.css": "/dashboard-stormtrooper/static/css/main.bee80549.css",
+    "main.js": "/dashboard-stormtrooper/static/js/main.d65ca255.js",
+    "index.html": "/dashboard-stormtrooper/index.html",
+    "main.bee80549.css.map": "/dashboard-stormtrooper/static/css/main.bee80549.css.map",
+    "main.d65ca255.js.map": "/dashboard-stormtrooper/static/js/main.d65ca255.js.map"
   },
   "entrypoints": [
     "static/css/main.bee80549.css",
-    "static/js/main.785c2d0b.js"
+    "static/js/main.d65ca255.js"
   ]
 }
