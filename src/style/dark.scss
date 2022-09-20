@@ -39,7 +39,17 @@ $darkModeBorderColor: #333;
 
         .deleteButton {
           color: rgba(255, 99, 71, 0.6);
-          border: 1px dotted rgba(220, 20, 60, 0.6);
+          border: 1px dotted rgba(240, 246, 252, 0.1);;
+          background-color: rgb(33, 38, 45);
+          transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+          transition-property: color, background-color, box-shadow, border-color;
+
+          &:hover {
+            background-color: #da3633;
+            border-color: #f85149;
+            color: #ffffff;
+          }
+
         }
       }
 
