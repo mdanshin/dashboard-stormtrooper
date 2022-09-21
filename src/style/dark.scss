@@ -12,73 +12,79 @@ $darkModeBorderColor: #333;
   background-color: $darkModeBGColor;
   color: $secondary-color;
 
-  .widget {
-    background-color: rgba(56, 139, 253, 0.15);
-    border: 1px solid rgba(56, 139, 253, 0.4);
-    @include darkModeShadow();
-  }
+  .mainContainer {
 
-  .featured,
-  .chart,
-  .listContainer {
-    // border-color:  rgba(56,139,253,0.4);
-    @include darkModeShadow();
-
-    .datatable {
-      .datatableTitle {
-        .link {
-          color: green;
-        }
-      }
-
-      .datagrid {
-        .viewButton {
-          color: rgb(42, 83, 145);
-          border: 1px dotted rgb(22, 90, 173);
-        }
-
-        .deleteButton {
-          color: rgba(255, 99, 71, 0.6);
-          border: 1px dotted rgba(240, 246, 252, 0.1);
-          background-color: rgb(33, 38, 45);
-          transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
-          transition-property: color, background-color, box-shadow, border-color;
-
-          &:hover {
-            background-color: #da3633;
-            border-color: #f85149;
-            color: #ffffff;
-          }
-        }
-      }
-
-      .cellWithStatus {
-        &.true {
-          color: green;
-          background-color: rgba(0, 128, 0, 0.05);
-        }
-
-        &.false {
-          color: rgba(255, 99, 71, 0.594);
-          background-color: rgba(255, 0, 0, 0.05);
-        }
-      }
+    .widget {
+      background-color: rgba(56, 139, 253, 0.15);
+      border: 1px solid rgba(56, 139, 253, 0.4);
+      @include darkModeShadow();
     }
 
-    .table {
+    .featured,
+    .chart,
+    .listContainer {
       @include darkModeShadow();
     }
   }
 
   .singleContainer {
-    .top {
-      .left {
+
+    .bottom,
+    .left,
+    .chart {
+      @include darkModeShadow();
+    }
+  }
+
+  .list {
+    .listContainer {
+      // border-color:  rgba(56,139,253,0.4);
+      // @include darkModeShadow();
+
+      .datatable {
+        .datatableTitle {
+          .link {
+            color: green;
+          }
+        }
+
+        .datagrid {
+          .viewButton {
+            color: rgb(42, 83, 145);
+            border: 1px dotted rgb(22, 90, 173);
+          }
+
+          .deleteButton {
+            color: rgba(255, 99, 71, 0.6);
+            border: 1px dotted rgba(240, 246, 252, 0.1);
+            background-color: rgb(33, 38, 45);
+            transition: 80ms cubic-bezier(0.33, 1, 0.68, 1);
+            transition-property: color, background-color, box-shadow, border-color;
+
+            &:hover {
+              background-color: #da3633;
+              border-color: #f85149;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .cellWithStatus {
+          &.true {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.05);
+          }
+
+          &.false {
+            color: rgba(255, 99, 71, 0.594);
+            background-color: rgba(255, 0, 0, 0.05);
+          }
+        }
+      }
+
+      .table {
         @include darkModeShadow();
       }
-    }
-
-    .bottom {
-      @include darkModeShadow();
     }
   }
 
