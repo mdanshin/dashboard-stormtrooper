@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dashboard-stormtrooper/static/css/main.bee80549.css",
+    "main.css": "/dashboard-stormtrooper/static/css/main.8c4b0c45.css",
     "main.js": "/dashboard-stormtrooper/static/js/main.2e12547d.js",
     "index.html": "/dashboard-stormtrooper/index.html",
-    "main.bee80549.css.map": "/dashboard-stormtrooper/static/css/main.bee80549.css.map",
+    "main.8c4b0c45.css.map": "/dashboard-stormtrooper/static/css/main.8c4b0c45.css.map",
     "main.2e12547d.js.map": "/dashboard-stormtrooper/static/js/main.2e12547d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bee80549.css",
+    "static/css/main.8c4b0c45.css",
     "static/js/main.2e12547d.js"
   ]
 }
