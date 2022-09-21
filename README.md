@@ -2,7 +2,7 @@
 React Admin Dashboard
 
 # Live Demo
-## https://danshin.ms/dms-cmdb-template/
+## https://danshin.ms/dashboard-stormtrooper/
 
 ![cover-light](src/assets/images/cover-light.png)
 ![cover-dark](src/assets/images/cover-dark.png)
