@@ -24,6 +24,33 @@ $darkModeBorderColor: #333;
     .chart,
     .listContainer {
       @include darkModeShadow();
+      background-color: $darkModeBGColor;
+
+      th {
+        border-color: #fff;
+      }
+
+      td {
+        border-color: $darkModeBorderColor;
+      }
+
+      tbody {
+
+        tr {
+
+          &:nth-child(n) {
+            td {
+              background: rgba(56, 139, 253, 0.15);
+            }
+          }
+
+          &:nth-child(2n) {
+            td {
+              background: $darkModeBGColor;
+            }
+          }
+        }
+      }
     }
   }
 
