@@ -2,11 +2,13 @@ import Chart from '../../components/chart/Chart'
 import Featured from '../../components/featured/Featured'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
-import Table from '../../components/table/Table'
 import Widget from '../../components/widget/Widget'
+import { Table } from 'dms-table'
+import { columns, data } from '../../mock/tableSource'
 import './main.scss'
 
 function Main() {
+
   return (
     <div className="main">
       <Sidebar />
@@ -23,7 +25,7 @@ function Main() {
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
-          <Table />
+          <Table columns={columns} data={data} />
         </div>
       </div>
     </div>
