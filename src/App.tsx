@@ -4,7 +4,7 @@ import Password from "./pages/Password/Password"
 import Single from "./pages/Single/Single"
 import New from "./pages/New/New"
 import List from "./pages/List/List"
-import { productInputs, userInputs } from './formSource'
+import { productInputs, userInputs } from './mock/formSource'
 import { useContext } from 'react'
 import { DarkModeContext } from './context/darkModeContext'
 import './style/dark.scss'

@@ -1,4 +1,4 @@
-﻿export const columns = [
+export const columns = [
   { label: "Full Name", accessor: "full_name", sortable: true, sortbyOrder: "asc" },
   { label: "Email", accessor: "email", sortable: false },
   { label: "Gender", accessor: "gender", sortable: true },
