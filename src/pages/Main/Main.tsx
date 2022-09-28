@@ -3,7 +3,7 @@ import Featured from '../../components/featured/Featured'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import Widget from '../../components/widget/Widget'
-import { Table } from 'dms-table'
+import Table from '../../components/dms-table/'
 import { columns, data } from '../../mock/tableSource'
 import './main.scss'
 
