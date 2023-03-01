@@ -28,3 +28,5 @@ https://danshin.ms/dms-cmdb-template/
 https://danshin.ms/dms-theme-demo/
 
 https://github.com/mdanshin/flexbox-example
+
+https://danshin.ms/dms-login-page-autumn/
